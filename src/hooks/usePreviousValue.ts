@@ -9,7 +9,6 @@ export const usePreviousValue = <T>(initialValue: T) => {
 
   useEffect(() => {
     ref.current = initialValue;
-    console.log("REf: ", initialValue);
   }, [initialValue]);
 
   return ref.current;
